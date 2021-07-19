@@ -4,13 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00fff0"
-    android:orientation="vertical"
-    tools:context=".secondActivity">
+    tools:context=".ThirdActivity">
 
     <Button
-        android:id="@+id/btn_close"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Second Activity Close"/>
+        android:layout_height="wrap_content"/>
 </LinearLayout>

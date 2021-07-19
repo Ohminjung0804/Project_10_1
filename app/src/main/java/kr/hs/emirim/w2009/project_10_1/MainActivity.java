@@ -9,14 +9,15 @@ import android.widget.Button;
 import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
-    RadioGroup rg = findViewById(R.id.rg);
+    RadioGroup rg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        rg = findViewById(R.id.rg);
         Button btnOpen = findViewById(R.id.btn_open);
         btnOpen.setOnClickListener(btnOpenListener);
-        rg = findViewById(R.id.rg);
+
     }
 
     View.OnClickListener btnOpenListener = new View.OnClickListener() {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             switch (rg.getCheckedRadioButtonId()){
                 case R.id.radio_second:
                     intent = new Intent(getApplicationContext(),secondActivity.class);
-
+                    break;
                 case R.id.radio_third:
                     intent = new Intent(getApplicationContext(),ThirdActivity.class);
             }
